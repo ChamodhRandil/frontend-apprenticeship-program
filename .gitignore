@@ -1,2 +1,12 @@
 node_modules/
 .vscode/
+.project
+.classpath
+/**/.settings
+*.DS_Store
+*.factorypath
+target/
+.idea/
+/.idea
+**/bin/**
+**/.flattened-pom.xml
