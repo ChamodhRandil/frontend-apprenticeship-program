@@ -8,8 +8,13 @@ import {DataService} from "../../../services/data.service";
 export class ApprenticeshipProgrammeCourseModuleComponent implements OnInit{
 
   courseModuleData: any;
+  audio!: HTMLAudioElement;
+
 
   constructor(private dataService: DataService) {
+    this.audio = new Audio();
+    this.audio.src = "../assets/music/better-day-186374.mp3";
+
   }
 
   ngOnInit(): void {
@@ -24,5 +29,17 @@ export class ApprenticeshipProgrammeCourseModuleComponent implements OnInit{
       console.log(data);
       console.log(this.courseModuleData);
     });
+  }
+
+  playSound(){
+    // let audio =  new Audio();
+    // audio.src = "../assets/music/better-day-186374.mp3";
+    this.audio.load();
+    this.audio.play();
+  }
+
+  stopSound() {
+    this.audio.pause();
+    this.audio.currentTime = 0;
   }
 }
