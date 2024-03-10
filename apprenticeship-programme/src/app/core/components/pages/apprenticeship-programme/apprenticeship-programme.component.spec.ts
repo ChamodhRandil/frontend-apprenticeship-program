@@ -1,7 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ApprenticeshipProgrammeComponent } from './apprenticeship-programme.component';
-import { of } from "rxjs";
-import { DataService } from "../../../services/data.service";
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {ApprenticeshipProgrammeComponent} from './apprenticeship-programme.component';
+import {of} from "rxjs";
+import {DataService} from "../../../services/data.service";
 
 describe('ApprenticeshipProgrammeComponent', () => {
   let component: ApprenticeshipProgrammeComponent;
@@ -14,7 +14,7 @@ describe('ApprenticeshipProgrammeComponent', () => {
     await TestBed.configureTestingModule({
       imports: [],
       providers: [
-        { provide: DataService, useValue: dataServiceSpy }
+        {provide: DataService, useValue: dataServiceSpy}
       ]
     })
       .compileComponents();
@@ -47,7 +47,7 @@ describe('ApprenticeshipProgrammeComponent', () => {
   });
 
   it('should fetch data on ngOnInit', () => {
-    const mockData = { courseModule: 'test data' };
+    const mockData = {courseModule: 'test data'};
     dataService.getScholarShipData.and.returnValue(of(mockData));
 
     component.ngOnInit();
