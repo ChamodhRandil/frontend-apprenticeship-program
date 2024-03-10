@@ -1,12 +1,14 @@
-<div style="overflow: scroll; max-height: 100%; paddindg-top: 250px">
+<div>
   <div class="sticky-header">
     <div class="row align-items-center header-content">
-      <div class="col">
+      <div class="interaction-space">
         <span class="main-heading">Interaction Space <span class="sub-heading">/Interaction Design</span></span>
-      </div>
 
-      <div class="col-auto">
-        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <button mat-icon-button (click)="toggleSound()" class="sound">
+          <mat-icon>{{ soundOn ? 'volume_up' : 'volume_off' }}</mat-icon>
+        </button>
+
+        <button class="menu-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Icon button">
           <mat-icon class="menu-icon">menu</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
@@ -24,77 +26,26 @@
           </button>
         </mat-menu>
       </div>
-    </div>
 
-    <div class="apply-now-button rounded-pill">
-      <span>Apply now</span>
+      <div class="apply">
+        <button class="apply-button">
+          <span class="apply-text">Apply</span><br>
+          <span class="now-text">Now</span>
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="container">
-<!--    <div class="row">-->
-<!--      <div class="col" style="width: 440px">-->
-<!--        <h2>Interaction Design Apprenticeship</h2>-->
-<!--        <span class="d-block">A comprehensive work initiative design to launch your tech career</span>-->
-<!--        <p>Our marketing programs are crafted to empower aspiring professionals from diverse backgrounds, providing unparalleled access to premium education, hands-on experience. Our marketing is very good.</p>-->
-<!--        <span class="d-block">Position: <span>Marketing Performance</span></span>-->
-<!--        <button class="rounded-pill" id="apply-now-btn">Apply now</button>-->
-<!--      </div>-->
-<!--      <div class="col" style="width: 480px">-->
-<!--        <div class="row align-items-center">-->
-<!--          <div class="col-auto">-->
-<!--            <img src="./assets/images/calendar.svg" width="80px" height="80px" />-->
-<!--          </div>-->
-<!--          <div class="col">-->
-<!--            <span class="d-block" style="opacity: 0.5px;">Powered by:</span>-->
-<!--            <span>Zeptolab</span>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="border rounded">-->
-<!--          <span class="d-block">Application closes in</span>-->
-<!--          <span>6 Days : 22 Hrs : 56 Min : 13</span>-->
-<!--        </div>-->
-<!--        <div class="border rounded">-->
-<!--          <div class="row">-->
-<!--            <div class="col">Location</div>-->
-<!--            <div class="col">Duration</div>-->
-<!--          </div>-->
-<!--          <div class="row">-->
-<!--            <div class="col">Bangkok</div>-->
-<!--            <div class="col">1 Year</div>-->
-<!--          </div>-->
-<!--          <div class="row">-->
-<!--            <div class="col">Start Date</div>-->
-<!--            <div class="col">End Date</div>-->
-<!--          </div>-->
-<!--          <div class="row">-->
-<!--            <div class="col">20 June 2022</div>-->
-<!--            <div class="col">25 May 2023</div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    <div class="row" style="margin-top: 160px; gap: 100px">-->
-<!--      <div class="col-auto d-flex align-items-center justify-content-center" style="width: 200px; background-color: aqua; width: 480px; height: 480px">-->
-<!--        <img src="./assets/images/calendar.svg" width="380px" height="380px" class="border" />-->
-<!--      </div>-->
-
-<!--      <div class="col" style="width: 450px; padding: 30px 40px">-->
-<!--        <h3 style="font-family: Apercu Pro; font-size: 48px; font-weight: 500; line-height: 56px; width: 450px">About the apprenticeship</h3>-->
-
-<!--        <p style="font-family: Apercu Pro; font-size: 22px; font-weight: 300; line-height: 32px; width: 450px; padding-top: 16px">-->
-<!--          Our marketing programs are crafted to empower aspiring professionals from diverse backgrounds, providing unparalleled access to premium-->
-<!--          education, hands-on experience, and invaluable networking opportunities. We provide a comprehensive.-->
-<!--        </p>-->
-<!--      </div>-->
-<!--    </div>-->
-
     <div class="row">
       <div class="col">
         <div class="title">Interaction Design Apprenticeship</div>
+        <div class="design-logo">
+          <img src="./assets/images/design-logo.png" width="206px" height="206px"/>
+        </div>
         <div class="work-study-program">A fully funded work-study program to launch your tech career.</div>
-        <p class="partnered-text">Harbour.Space has partnered with SCG to empower driven talent and eliminate the barriers to accessing exceptional education and career opportunities through a Masters Fellowship.</p>
+        <p class="partnered-text">Harbour.Space has partnered with SCG to empower driven talent and eliminate the
+          barriers to accessing exceptional education and career opportunities through a Masters Fellowship.</p>
         <span class="position-text">Position: <span>Marketing Performance</span></span>
         <button class="rounded-pill" id="apply-now-btn">Apply now</button>
       </div>
@@ -103,7 +54,7 @@
         <div class="row align-items-center">
 
           <div class="col-auto">
-            <img src="./assets/images/img.png" width="80px" height="80px" />
+            <img src="./assets/images/img.png" width="80px" height="80px"/>
           </div>
 
           <div class="col">
@@ -139,34 +90,20 @@
         </div>
       </div>
     </div>
-
-<!--    <div class="bg-image-container">-->
-<!--      <img src="./assets/images/rectangle.jpeg" width="560px" height="257px">-->
-<!--    </div>-->
-
-<!--    <div class="row" style="margin-top: 160px; gap: 100px">-->
-<!--      <div class="col-auto d-flex align-items-center justify-content-center">-->
-<!--        <img src="./assets/images/calendar.svg" width="380px" height="380px" class="border" />-->
-<!--      </div>-->
-
-<!--      <div class="col">-->
-<!--        <h3>About the apprenticeship</h3>-->
-<!--        <p>Our marketing programs are crafted to empower aspiring professionals from diverse backgrounds, providing unparalleled access to premium education, hands-on experience, and invaluable networking opportunities. We provide a comprehensive.</p>-->
-<!--      </div>-->
-<!--    </div>-->
-
     <div class="row custom-row">
       <div class="person-image-container">
         <img src="./assets/images/bg-person.png" width="438px" height="438px"/>
       </div>
 
-      <div class="person-container">
-        <img src="./assets/images/person.jpeg" width="380px" height="380px" />
-      </div>
 
       <div class="col">
+        <div class="person-container">
+          <img src="./assets/images/person-avatar.png" width="380px" height="380px"/>
+        </div>
         <h3 class="about-apprenticeship-heading">About the apprenticeship</h3>
-        <p class="marketing-programs">Our scholarships are designed to give talented and driven young people from any background access to top-class education, experience and network. We offer a fully-funded master’s degree alongside an apprenticeship and a guaranteed job upon graduation.</p>
+        <p class="marketing-programs">Our scholarships are designed to give talented and driven young people from any
+          background access to top-class education, experience and network. We offer a fully-funded master’s degree
+          alongside an apprenticeship and a guaranteed job upon graduation.</p>
       </div>
 
     </div>
@@ -228,15 +165,40 @@ You will complete 15 modules to graduate. Daily classes are 3 hours, plus course
           <hr class="custom-divider-inside-2">
           <span class="detail-description">You’ll be guaranteed a 1 year contract with SCG upon graduation.</span>
         </div>
-        </div>
+      </div>
     </div>
 
     <div class="bg-animation-container">
-      <img src="./assets/images/background-animation.jpeg" width="1120px" height="394.07px" />
+      <img src="./assets/images/background-animation.jpeg" width="1120px" height="394.07px"/>
     </div>
 
+    <!--    <div class="main-container">-->
+    <!--      <div class="row-container d-inline-flex">-->
+    <!--        <div class="card border rounded" *ngFor="let index of [].constructor(5)">-->
+    <!--          <div class="row align-items-center card-content">-->
+    <!--            <div class="col">-->
+    <!--              <img src="./assets/images/girl.jpeg" width="80px" height="78.62px" class="avatar">-->
+    <!--              <span class="name">Irene Pereyra</span>-->
+    <!--              <br>-->
+    <!--              <span class="role">Interaction Design Fellow ‘19</span>-->
+    <!--            </div>-->
+    <!--            <div class="col-auto">-->
+    <!--              <mat-icon class="add-icon">add</mat-icon>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--          <div class="additional-content">-->
+    <!--            <div class="additional-content-content">-->
+    <!--            <span class="additional-content-description">-->
+    <!--              This Fellowship was a turning point in my career. I wouldn’t be where I am today without the financial support and experienced offered through the program.-->
+    <!--            </span><br><br>-->
+    <!--              <span class="education">Education · B.A. Visual Design</span>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
     <div class="main-container">
-      <div class="row-container d-inline-flex">
+      <div class="row-container d-inline-flex" id="cardContainer">
         <div class="card border rounded" *ngFor="let index of [].constructor(5)">
           <div class="row align-items-center card-content">
             <div class="col">
@@ -251,201 +213,83 @@ You will complete 15 modules to graduate. Daily classes are 3 hours, plus course
           </div>
           <div class="additional-content">
             <div class="additional-content-content">
-            <span class="additional-content-description">
-              This Fellowship was a turning point in my career. I wouldn’t be where I am today without the financial support and experienced offered through the program.
-            </span><br><br>
+          <span class="additional-content-description">
+            This Fellowship was a turning point in my career. I wouldn’t be where I am today without the financial support and experienced offered through the program.
+          </span><br><br>
               <span class="education">Education · B.A. Visual Design</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="w-100 h-100" style="margin-top: 80px">
-      <div class="row justify-content-between" style="">
-        <div class="col" style="max-width: 440px">
-          <span style="font-family: Apercu Pro; font-size: 48px; font-weight: 500; line-height: 56px">Frequently asked questions</span>
-        </div>
 
-        <div class="col-auto d-flex align-items-center">
-          <span>Filter by:</span>
 
-          <mat-form-field appearance="outline" class="w-100 ml-2">
+    <div class="test">
+      <div class="title-question-container">
+        <div class="col">
+          <span class="title-question">Frequently asked questions</span>
+          <span class="filter-by">Filter by:</span>
+          <mat-form-field appearance="outline" class="custom-mat-field">
             <mat-select [(ngModel)]="selectedValue" name="food" placeholder="Program conditions">
               <mat-option *ngFor="let food of foods" [value]="food.value">
                 {{ food.viewValue }}
               </mat-option>
             </mat-select>
           </mat-form-field>
-        </div>
-      </div>
 
-      <mat-divider style="margin-top: 32px; margin-bottom: 32px"></mat-divider>
+          <mat-divider class="mt-4 mb-4"></mat-divider>
 
-      <div class="row justify-content-between border-bottom">
-        <div class="col-auto">
-          <span style="font-family: Apercu Pro; font-size: 22px; font-weight: 500; line-height: 32px">Program conditions</span>
-        </div>
-
-        <div class="col" style="width: 500px; margin-left: 150px">
-          <span class="d-block" style="font-family: Apercu Pro; font-size: 22px; font-weight: 300; line-height: 32px">What are my obligations?</span>
-
-          <div *ngIf="showABC">
-            <p style="padding-top: 16px; font-family: Apercu Pro; font-size: 22px; font-weight: 500; line-height: 32px">
-              Introducing the latest innovation in personal wellness: Zenith Relaxation Pods. Transform your daily routine with our
-              state-of-the-art relaxation technology designed to melt away stress and rejuvenate your mind and body. Imagine slipping into a
-              cocoon of \n tranquility as gentle vibrations and soothing \n aromatherapy envelop you, transporting you to a realm of serenity.
-              With customizable settings to suit your preferences, Zenith Relaxation Pods offer a bespoke relaxation experience tailored to your
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <mat-icon (click)="onexpand()" class="rounded-pill" style="font-size: 48px; background: red; width: 48px; height: 48px">add</mat-icon>
-        </div>
-      </div>
-
-      <div class="row justify-content-between border-bottom" style="gap: 20px">
-        <div class="col-auto">
-          <span>Program conditions</span>
-        </div>
-
-        <div class="col" style="max-width: 500px">
-          <span class="d-block">what si ds skdfdsfds ?</span>
-
-          <div *ngIf="showAAA">
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <mat-icon (click)="onexpandA()">add</mat-icon>
-        </div>
-      </div>
-
-      <div class="row justify-content-between border-bottom" style="gap: 20px">
-        <div class="col-auto">
-          <span>Program conditions</span>
-        </div>
-
-        <div class="col" style="max-width: 500px">
-          <span class="d-block">what si ds skdfdsfds ?</span>
-
-          <div *ngIf="showBBB">
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <mat-icon (click)="onexpandB()">add</mat-icon>
-        </div>
-      </div>
-
-      <div class="row justify-content-between" style="gap: 20px">
-        <div class="col-auto">
-          <span>Program conditions</span>
-        </div>
-
-        <div class="col" style="max-width: 500px">
-          <span class="d-block">what si ds skdfdsfds ?</span>
-
-          <div *ngIf="showCCC">
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-
-            <p style="padding-top: 16px">
-              jdsoijfoidsjfoi dsjfj dsjfoids fiodsjfoids jfipdsjfoidsj fdsjfidosf dsiojfdsij fdsjfoidsjf odsjfiods jfidsj foidsj fiodsj
-              foidsjfoidsj foidsj foidsj fdsj fdsjfiodsjf jdsf jdsifjds
-            </p>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <mat-icon (click)="onexpandC()">add</mat-icon>
         </div>
       </div>
     </div>
+
+
+    <div class="content-container">
+      <div class="row justify-content-between border-bottom">
+        <div class="col-auto">
+          <span class="section-title">Program conditions</span>
+          <span class="question">What are my obligations?</span>
+        </div>
+      </div>
+      <div class="row justify-content-between border-bottom">
+        <div class="col-auto">
+          <span class="section-title-2">Program conditions</span>
+          <span class="question - 2">What are my obligations?</span>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+
+      <div class="col-auto">
+        <div class="add">
+          <button mat-icon-button (click)="onExpand()" class="rounded-pill">
+            <mat-icon>{{ expanded ? 'remove' : 'add' }}</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <div *ngIf="expanded">
+        <p class="answer">
+          Introducing the latest innovation in personal wellness: Zenith Relaxation Pods. Transform your daily routine
+          with our
+          state-of-the-art relaxation technology designed to melt away stress and rejuvenate your mind and body. Imagine
+          slipping into a
+          cocoon of tranquility as gentle vibrations and soothing aromatherapy envelop you, transporting you to a realm
+          of serenity.
+          With customizable settings to suit your preferences, Zenith Relaxation Pods offer a bespoke relaxation
+          experience tailored to your
+        </p>
+      </div>
+    </div>
   </div>
+
+<!--  <div class="bottom-layer">-->
+<!--    <div class="buttons">-->
+<!--      <button mat-icon-button (click)="toggleSound()">-->
+<!--        <mat-icon>{{ soundOn ? 'volume_up' : 'volume_off' }}</mat-icon>-->
+<!--      </button>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
 </div>
