@@ -8,6 +8,10 @@ import {CommonModule} from "@angular/common";
 import {
   ApprenticeshipProgrammeComponent
 } from "./core/components/pages/apprenticeship-programme/apprenticeship-programme.component";
+import {MatIcon, MatIconModule} from "@angular/material/icon";
+import {MatExpansionModule} from "@angular/material/expansion";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatToolbar} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
@@ -18,7 +22,12 @@ import {
     BrowserModule,
     CommonModule,
     HttpClientModule,
-    ApprenticeshipProgrammeComponent
+    ApprenticeshipProgrammeComponent,
+    MatIcon,
+    MatExpansionModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    MatToolbar
   ],
   providers: [],
   bootstrap: [AppComponent]

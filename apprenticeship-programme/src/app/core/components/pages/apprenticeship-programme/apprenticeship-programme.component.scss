@@ -1,4 +1,3 @@
-/* Global styles */
 .container {
   width: 100%;
   max-width: 1440px;
@@ -208,6 +207,9 @@
   letter-spacing: -0.145454540848732px;
   text-align: left;
   color: #685DC5;
+  position: absolute;
+  top: 25px;
+  left: 40px;
 }
 
 .countdown {
@@ -221,7 +223,8 @@
   text-align: left;
   color: #535353;
   position: absolute;
-  top: 42px;
+  top: 55px;
+  left: 40px;
 }
 
 .rectangle-section {
@@ -244,7 +247,9 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #685DC5;
-
+  top: 40px;
+  position: absolute;
+  left: 40px;
 }
 
 .bangkok-text {
@@ -255,13 +260,29 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #535353;
+  top: 64px;
+  position: absolute;
+  left: 30px;
+}
+
+.startDate-text {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  top: 126px;
+  position: absolute;
+  left: 30px;
 }
 
 .duration-label {
   width: 106px;
   height: 73px;
   position: absolute;
-  left: 240px;
+  left: 246px;
   font-family: "Apercu Pro";
   font-size: 16px;
   font-weight: 300;
@@ -269,11 +290,13 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #685DC5;
+  position: absolute;
+  top: 40px;
 
 }
 
 .duration-value {
-  width: 106px;
+  width: 156px;
   height: 73px;
   position: absolute;
   left: 230px;
@@ -284,6 +307,24 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #535353;
+  position: absolute;
+  top: 64px ;
+}
+
+.endDate-Text {
+  width: 156px;
+  height: 73px;
+  position: absolute;
+  left: 230px;
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  top: 126px ;
 }
 
 .date-text {
@@ -292,22 +333,29 @@
   line-height: 24px;
   letter-spacing: -0.1599999964237213px;
   text-align: left;
+  color: #685DC5;
+
 }
 
-.date-text .start-date {
+.start-date {
   font-weight: 300;
   width: 144px;
   height: 49px;
-  top: 72px;
+  top: 102px;
   display: inline-block;
+  position: absolute;
+  left: 40px;
 }
 
-.date-text .end-date {
-  font-weight: 500;
+.end-date {
+  font-weight: 300;
   width: 144px;
-  height: 49px;
-  top: 72px;
+  height: 24px;
+  top: 102px;
   display: inline-block;
+  position: absolute;
+  left: 246px;
+  color: #685DC5;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -347,15 +395,19 @@
   height: 438px;
   top: 1030px;
   left: 203px;
-  border: 1px solid #EEEEEE;
 }
 
 .person-container {
   position: absolute;
   top: 1059px;
-  left: 231px;
+  left: 245px;
 }
 
+@media (max-width: 768px) {
+  .person-container {
+    position: static;
+  }
+}
 .about-apprenticeship-heading {
   position: absolute;
   width: 479px;
@@ -399,7 +451,7 @@
 }
 
 .value-label {
-  width: 122px;
+  width: 132px;
   height: 24px;
   font-family: "Apercu Pro", sans-serif;
   font-size: 16px;
@@ -408,18 +460,23 @@
   letter-spacing: -0.1455px;
   text-align: left;
   color: #685DC5;
+  top: 32px;
+  left: 30px;
+  position: absolute;
 }
 
 .detail-label {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  top: 32px;
+  left: 30px;
+  position: absolute;
 }
 
 .value-amount {
   width: 160px;
   height: 34px;
-  top: 57px;
   font-family: "Apercu Pro", sans-serif;
   font-size: 48px;
   font-weight: 300;
@@ -427,17 +484,70 @@
   letter-spacing: -0.4364px;
   text-align: left;
   color: #535353;
-}
-.detail {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 35px;
+  position: absolute;
+  top: 90px;
+  left: 30px;
 }
 
-.detail-description {
+.detail-1 {
+  font-family: Apercu Pro;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  left: 30px;
+  top: 400px;
+}
+
+
+.detail-2 {
+  font-family: Apercu Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  left: 185px;
+  top: 400px;
+}
+
+.detail-3 {
+  font-family: Apercu Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  left: 30px;
+  top: 472px;
+}
+
+
+.detail-description {
+  font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  position: absolute;
+  top: 136px;
+  left: 30px;
+  width: 270px;
+}
+
+.detail-description-2 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  position: absolute;
+  top: 136px;
+  left: 30px;
+  width: 500px;
 }
 
 .custom-divider {
@@ -449,8 +559,30 @@
   position: absolute;
 }
 
+.living-stipped {
+  width: 135px;
+  height: 24px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.1455px;
+  text-align: left;
+  color: #685DC5;
+  position: absolute;
+  left: 30px;
+  top: 445px;
+}
+.custom-divider-1 {
+  width: 265.75px;
+  height: 1px;
+  top: 311px;
+  left: 29px;
+  border: 1px solid #DADADA;
+  position: absolute;
+}
+
 .tuition-covered {
-  margin-top: 30000px;
   font-family: "Apercu Pro";
   font-size: 16px;
   font-weight: 300;
@@ -458,6 +590,22 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #685DC5;
+  position: absolute;
+  left: 30px;
+  top: 373px;
+}
+
+.remain {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #685DC5;
+  position: absolute;
+  left: 185px;
+  top: 373px;
 }
 
 .study-commitment-section {
@@ -493,21 +641,40 @@
 .detail {
   width: 148px;
   height: 35px;
-  top: 32px;
   font-family: "Apercu Pro", sans-serif;
   font-size: 26px;
   font-weight: 300;
   line-height: 35px;
   letter-spacing: -0.1857px;
   text-align: left;
+  position: absolute;
+  top: 64px;
+  left: 30px;
+  color: #535353;
+}
+
+.detail-4 {
+  width: 200px;
+  height: 35px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: -0.1857px;
+  text-align: left;
+  position: absolute;
+  top: 64px;
+  left: 30px;
+  color: #535353;
 }
 
 .custom-divider-inside {
   width: 27.82px;
   height: 1px;
-  top: 89px;
+  top: 116px;
   border: 1px solid #DADADA;
-}
+  position: absolute;
+  left: 30px}
 
 .custom-graduation-section {
   width: 676px;
@@ -554,8 +721,10 @@
 .custom-divider-inside-2 {
   width: 27.82px;
   height: 1px;
-  top: 89px;
+  top: 106px;
   border: 1px solid #DADADA;
+  position: absolute;
+  left: 30px;
 }
 
 .bg-animation-container {
@@ -568,12 +737,19 @@
 }
 
 .main-container {
-  height: 459.92px;
+  width: 100%;
+  height: 470.92px;
   top: 2343.08px;
   border-radius: 0px 0px 4px 4px;
-  overflow-x: auto;
+  overflow-y: auto;
   scrollbar-width: thin;
   position: absolute;
+}
+
+#cardContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .row-container {
@@ -582,18 +758,21 @@
 
 .card {
   width: 800px;
+  height: 459px;
   margin-right: 20px;
+  border: 1px solid #DADADA;
 }
 
 .card-content {
   padding: 20px;
   gap: 16px;
-  background-color: white;
 }
 
 .card-content img {
   width: 80px;
   height: 80px;
+  position: absolute;
+  left: 40px;
 }
 
 .card-content .name {
@@ -601,6 +780,9 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  position: absolute;
+  top: 45px;
+  left: 142px;
 }
 
 .card-content .role {
@@ -608,6 +790,10 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  position: absolute;
+  top: 62px;
+  left: 142px;
+  color: #535353;
 }
 
 .card-content .add-icon {
@@ -619,10 +805,11 @@
 .additional-content {
   width: 798px;
   height: 310.54px;
-  top: 2491.47px;
-  left: 273px;
+  top: 148px;
+  left: 0px;
   border-radius: 0px 0px 4px 4px;
   background-color: #FBFBFB;
+  position: absolute;
 }
 
 
@@ -631,7 +818,6 @@
   height: 191.63px;
   top: 2547.49px;
 }
-
 
 
 .additional-content-description {
@@ -644,6 +830,9 @@
   letter-spacing: -0.18571428954601288px;
   text-align: left;
   color: #6A6A6A;
+  position: absolute;
+  top: 56px;
+  left: 121px;
 }
 
 avatar {
@@ -682,7 +871,377 @@ avatar {
 .education {
   width: 212px;
   height: 24px;
-  top: 169px;
+  top: 212px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  left: 126px;
+}
+
+.title-question {
+  width: 441px;
+  height: 112px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #685DC5;
+  height: 112px;
+}
+
+.title-question-container {
+  width: 441px;
+  height: 112px;
+  top: 2973px;
+  left: 146px;
+  position: absolute;
+}
+
+.filter-by {
+  width: 317px;
+  height: 58px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: right;
+  color: #6A6A6A;
+  left: 537px;
+  position: absolute;
+  top: 27px;
+
+}
+
+@media screen and (max-width: 1194px) {
+  .filter-by {
+    width: 300px;
+    text-align: left;
+    left: 500px;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .filter-by {
+    width: 300px;
+    text-align: left;
+    left: 500px;
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .filter-by {
+    font-size: 14px;
+    width: auto;
+    line-height: 20px;
+    left: 500px;
+
+  }
+}
+
+.filter-by {
+  width: 317px;
+  height: 58px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: right;
+  color: #6A6A6A;
+  left: 537px;
+  position: absolute;
+  top: 27px;
+
+}
+
+.custom-mat-field {
+  width: 235px;
+  height: 58px;
+  left: 870px;
+  top: 12px;
+  position: absolute;
+}
+
+.custom-mat-field .mat-form-field {
+  font-family: 'Apercu Pro';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.18000000715255737px;
+  text-align: left;
+  color: #685DC5;
+  border: 1px solid #DADADA;
+}
+
+.custom-mat-field .mat-form-field.mat-focused .mat-form-field-outline-start,
+.custom-mat-field .mat-form-field.mat-focused .mat-form-field-outline-end {
+  border-color: #685DC5;
+}
+
+.custom-mat-field .mat-form-field.mat-focused .mat-form-field-outline-start,
+.custom-mat-field .mat-form-field.mat-focused .mat-form-field-outline-end {
+  border-color: #685DC5;
+}
+
+.custom-mat-field .mat-form-field.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  color: #685DC5;
+}
+
+.custom-mat-field .mat-form-field-underline {
+  display: none;
+}
+
+.custom-mat-field .mat-form-field-placeholder {
+  color: #685DC5;
+}
+
+.mat-divider {
+  width: 1041px;
+  height: 1px;
+  background-color: #E6E6E6;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.content-container {
+  width: 920px;
+  height: 748px;
+  top: 3198px;
+  left: 147px;
+}
+
+@media only screen and (max-width: 767px) {
+  .content-container {
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: auto;
+    margin: 20px;
+  }
+}
+
+.section-title {
+  width: 189px;
+  height: 32px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.33000001311302185px;
+  text-align: left;
+  color: #685DC5;
+  position: absolute;
+  top: 3198px;
+  left: 155px;
+}
+
+.section-title-2 {
+  width: 189px;
+  height: 32px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.33000001311302185px;
+  text-align: left;
+  color: #685DC5;
+  position: absolute;
+  top: 3198px;
+  left: 155px;
+}
+
+.question-container {
+  width: 559px;
+  height: 748px;
+  position: absolute;
+}
+
+.question {
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.33000001311302185px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  left: 550px;
+  top: 3198px;
+}
+
+.answer {
+  width: 559px;
+  height: 500px;
+  left: 550px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.33000001311302185px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  top: 3250px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #000000;
+}
+
+.add {
+  width: 48px;
+  height: 48px;
+  top: 3182px;
+  left: 1107px;
+  position: absolute;
+}
+
+.main-heading {
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  padding-left: 50px;
+}
+
+.sub-heading {
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+.row align-items-center header-content {
+  fill: #685DC5;
+}
+
+.interaction-space {
+  background-color: #685DC5;
+  padding: 10px;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  .interaction-space {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interaction-space {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .interaction-space {
+    width: 100%;
+  }
+}
+
+.apply-button {
+  background-color: #008000;
+  color: white;
+  border: none;
+  padding: 0;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0.8;
+  cursor: pointer;
+  left: 1100px;
+  top: 12px;
+  position: absolute;
+}
+
+.apply-text,
+.now-text {
+  display: block;
+}
+
+.design-logo {
+  width: 206px;
+  height: 206px;
+  top: 162.98px;
+  left: 406.44px;
+  position: absolute;
+  opacity: 0.5;
+  transform: rotate(-20deg); /* Rotate the image */
+}
+
+.menu-button {
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  left: 1350px;
+  top: 16px;
+  position: absolute;
+}
+
+.sound {
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  left: 1000px;
+  top: 5px;
+}
+
+.menu-icon {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom-sticky-bar {
+  width: 1440px;
+  height: 86.08px;
+  position: absolute;
+  top: 3850px;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-zeptolab-text {
+  width: 163.6px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  left: 80px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+}
+
+.bottom-marketing-performance-text {
+  width: 164px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  left: 80px;
   font-family: 'Apercu Pro', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -692,32 +1251,203 @@ avatar {
   color: #535353;
 }
 
+.bottom-location-text {
+  width: 62px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 308px;
+}
 
-//@media only screen and (min-width: 768px) and (max-width: 1024px) {
-//  .custom-graduation-section,
-//  .full-time-contract-section,
-//  .work-commitment-section,
-//  .study-commitment-section,
-//  .program-value-section{
-//    width: 50%;
-//  }
+.bottom-duration-text {
+  width: 62px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 434px;
+}
+
+.bottom-full-time-text {
+  width: 145px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 434px;
+}
+
+.bottom-start-date-text {
+  width: 72px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 603px;
+}
+
+.bottom-date-text {
+  width: 100px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 603px;
+}
+
+.bottom-deadline-text {
+  width: 144px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 742px;
+}
+
+.bottom-deadline-date-text {
+  width: 110px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 742px;
+}
+
+.bottom-closes-in-text {
+  width: 145px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 951px;
+}
+
+.bottom-time-remaining-text {
+  width: 185px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 951px;
+}
+
+.bottom-Bangkok-text {
+  width: 185px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 308px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+  .container {
+    max-width: 834px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px),
+only screen and (min-width: 834px) and (max-width: 1194px) {
+  .col {
+    width: 50%;
+  }
+
+  .application-section,
+  .rectangle-section {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  .application-section,
+  .rectangle-section {
+    width: 480px;
+  }
+}
+
+//@media only screen
+//and (min-device-width: 768px)
+//and (max-device-width: 1024px)
+//and (-webkit-min-device-pixel-ratio: 1) {
 //}
 //
-//@media only screen and (min-width: 834px) and (max-width: 1194px) {
-//  .custom-graduation-section,
-//  .full-time-contract-section,
-//  .work-commitment-section,
-//  .study-commitment-section,
-//  .program-value-section{
-//    width: 60%;
-//  }
+//@media only screen
+//and (min-device-width: 1024px)
+//and (max-device-width: 1366px)
+//and (-webkit-min-device-pixel-ratio: 2) {
 //}
-
-
-
-
-
-
-
-
-
