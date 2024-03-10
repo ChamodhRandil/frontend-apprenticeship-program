@@ -758,18 +758,21 @@
 
 .card {
   width: 800px;
+  height: 459px;
   margin-right: 20px;
+  border: 1px solid #DADADA;
 }
 
 .card-content {
   padding: 20px;
   gap: 16px;
-  background-color: white;
 }
 
 .card-content img {
   width: 80px;
   height: 80px;
+  position: absolute;
+  left: 40px;
 }
 
 .card-content .name {
@@ -777,6 +780,9 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  position: absolute;
+  top: 45px;
+  left: 142px;
 }
 
 .card-content .role {
@@ -784,6 +790,10 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  position: absolute;
+  top: 62px;
+  left: 142px;
+  color: #535353;
 }
 
 .card-content .add-icon {
@@ -795,10 +805,11 @@
 .additional-content {
   width: 798px;
   height: 310.54px;
-  top: 2491.47px;
-  left: 273px;
+  top: 148px;
+  left: 0px;
   border-radius: 0px 0px 4px 4px;
   background-color: #FBFBFB;
+  position: absolute;
 }
 
 
@@ -819,6 +830,9 @@
   letter-spacing: -0.18571428954601288px;
   text-align: left;
   color: #6A6A6A;
+  position: absolute;
+  top: 56px;
+  left: 121px;
 }
 
 avatar {
@@ -857,7 +871,7 @@ avatar {
 .education {
   width: 212px;
   height: 24px;
-  top: 169px;
+  top: 212px;
   font-family: 'Apercu Pro', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -865,6 +879,8 @@ avatar {
   letter-spacing: -0.1599999964237213px;
   text-align: left;
   color: #535353;
+  position: absolute;
+  left: 126px;
 }
 
 .title-question {
@@ -1066,7 +1082,7 @@ avatar {
 
 .answer {
   width: 559px;
-  height: 748px;
+  height: 500px;
   left: 550px;
   font-family: 'Apercu Pro', sans-serif;
   font-size: 22px;
@@ -1194,6 +1210,195 @@ avatar {
   color: white;
   padding: 0;
   margin: 0;
+}
+
+.bottom-sticky-bar {
+  width: 1440px;
+  height: 86.08px;
+  position: absolute;
+  top: 3850px;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-zeptolab-text {
+  width: 163.6px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  left: 80px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+}
+
+.bottom-marketing-performance-text {
+  width: 164px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  left: 80px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+}
+
+.bottom-location-text {
+  width: 62px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 308px;
+}
+
+.bottom-duration-text {
+  width: 62px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 434px;
+}
+
+.bottom-full-time-text {
+  width: 145px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 434px;
+}
+
+.bottom-start-date-text {
+  width: 72px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 603px;
+}
+
+.bottom-date-text {
+  width: 100px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 603px;
+}
+
+.bottom-deadline-text {
+  width: 144px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 742px;
+}
+
+.bottom-deadline-date-text {
+  width: 110px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 742px;
+}
+
+.bottom-closes-in-text {
+  width: 145px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  left: 951px;
+}
+
+.bottom-time-remaining-text {
+  width: 185px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 951px;
+}
+
+.bottom-Bangkok-text {
+  width: 185px;
+  height: 24px;
+  position: absolute;
+  top: 46px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  left: 308px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
