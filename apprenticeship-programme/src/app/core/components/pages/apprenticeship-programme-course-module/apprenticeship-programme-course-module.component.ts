@@ -1,16 +1,19 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../../services/data.service";
+
 @Component({
   selector: 'app-apprenticeship-programme-course-module',
   templateUrl: './apprenticeship-programme-course-module.component.html',
   styleUrl: './apprenticeship-programme-course-module.component.scss'
 })
-export class ApprenticeshipProgrammeCourseModuleComponent implements OnInit{
+export class ApprenticeshipProgrammeCourseModuleComponent implements OnInit {
 
   courseModuleData: any;
   audio!: HTMLAudioElement;
 
-
+/*
+Use for Testing Purposes
+*/
   constructor(private dataService: DataService) {
     this.audio = new Audio();
     this.audio.src = "../assets/music/better-day-186374.mp3";
@@ -31,7 +34,7 @@ export class ApprenticeshipProgrammeCourseModuleComponent implements OnInit{
     });
   }
 
-  playSound(){
+  playSound() {
     // let audio =  new Audio();
     // audio.src = "../assets/music/better-day-186374.mp3";
     this.audio.load();

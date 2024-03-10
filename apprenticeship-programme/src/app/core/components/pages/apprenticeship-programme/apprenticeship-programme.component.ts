@@ -20,12 +20,12 @@ import {DataService} from "../../../services/data.service";
 @Component({
   selector: 'app-apprenticeship-programme',
   standalone: true,
-  imports: [ MatIcon, MatDivider, NgOptimizedImage, NgIf, NgForOf, MatMenuTrigger, MatMenu, MatFormField, MatSelect, MatOption, FormsModule, MatAccordion, MatExpansionPanel, MatExpansionPanelTitle, MatExpansionPanelDescription, MatIconButton, MatIconModule, MatSlider, MatToolbar, MatMenuItem
+  imports: [MatIcon, MatDivider, NgOptimizedImage, NgIf, NgForOf, MatMenuTrigger, MatMenu, MatFormField, MatSelect, MatOption, FormsModule, MatAccordion, MatExpansionPanel, MatExpansionPanelTitle, MatExpansionPanelDescription, MatIconButton, MatIconModule, MatSlider, MatToolbar, MatMenuItem
   ],
   templateUrl: './apprenticeship-programme.component.html',
   styleUrl: './apprenticeship-programme.component.scss'
 })
-export class ApprenticeshipProgrammeComponent implements OnInit{
+export class ApprenticeshipProgrammeComponent implements OnInit {
   expanded = false;
   selectedValue!: string;
   courseModuleData: any;
@@ -34,9 +34,9 @@ export class ApprenticeshipProgrammeComponent implements OnInit{
 
 
   foods: any[] = [
-    { value: 'steak-0', viewValue: 'Steak' },
-    { value: 'pizza-1', viewValue: 'Pizza' },
-    { value: 'tacos-2', viewValue: 'Tacos' },
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'},
   ];
 
   constructor(private dataService: DataService) {
@@ -71,7 +71,7 @@ export class ApprenticeshipProgrammeComponent implements OnInit{
     }
   }
 
-  playSound(){
+  playSound() {
     this.audio.load();
     this.audio.play();
   }
