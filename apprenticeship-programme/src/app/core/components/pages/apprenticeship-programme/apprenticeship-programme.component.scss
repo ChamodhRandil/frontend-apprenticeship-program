@@ -207,6 +207,9 @@
   letter-spacing: -0.145454540848732px;
   text-align: left;
   color: #685DC5;
+  position: absolute;
+  top: 25px;
+  left: 40px;
 }
 
 .countdown {
@@ -220,7 +223,8 @@
   text-align: left;
   color: #535353;
   position: absolute;
-  top: 42px;
+  top: 55px;
+  left: 40px;
 }
 
 .rectangle-section {
@@ -243,7 +247,9 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #685DC5;
-
+  top: 40px;
+  position: absolute;
+  left: 40px;
 }
 
 .bangkok-text {
@@ -254,13 +260,29 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #535353;
+  top: 64px;
+  position: absolute;
+  left: 30px;
+}
+
+.startDate-text {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  top: 126px;
+  position: absolute;
+  left: 30px;
 }
 
 .duration-label {
   width: 106px;
   height: 73px;
   position: absolute;
-  left: 240px;
+  left: 246px;
   font-family: "Apercu Pro";
   font-size: 16px;
   font-weight: 300;
@@ -268,11 +290,13 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #685DC5;
+  position: absolute;
+  top: 40px;
 
 }
 
 .duration-value {
-  width: 106px;
+  width: 156px;
   height: 73px;
   position: absolute;
   left: 230px;
@@ -283,6 +307,24 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #535353;
+  position: absolute;
+  top: 64px ;
+}
+
+.endDate-Text {
+  width: 156px;
+  height: 73px;
+  position: absolute;
+  left: 230px;
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  top: 126px ;
 }
 
 .date-text {
@@ -291,22 +333,29 @@
   line-height: 24px;
   letter-spacing: -0.1599999964237213px;
   text-align: left;
+  color: #685DC5;
+
 }
 
-.date-text .start-date {
+.start-date {
   font-weight: 300;
   width: 144px;
   height: 49px;
-  top: 72px;
+  top: 102px;
   display: inline-block;
+  position: absolute;
+  left: 40px;
 }
 
-.date-text .end-date {
-  font-weight: 500;
+.end-date {
+  font-weight: 300;
   width: 144px;
-  height: 49px;
-  top: 72px;
+  height: 24px;
+  top: 102px;
   display: inline-block;
+  position: absolute;
+  left: 246px;
+  color: #685DC5;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -402,7 +451,7 @@
 }
 
 .value-label {
-  width: 122px;
+  width: 132px;
   height: 24px;
   font-family: "Apercu Pro", sans-serif;
   font-size: 16px;
@@ -411,18 +460,23 @@
   letter-spacing: -0.1455px;
   text-align: left;
   color: #685DC5;
+  top: 32px;
+  left: 30px;
+  position: absolute;
 }
 
 .detail-label {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  top: 32px;
+  left: 30px;
+  position: absolute;
 }
 
 .value-amount {
   width: 160px;
   height: 34px;
-  top: 57px;
   font-family: "Apercu Pro", sans-serif;
   font-size: 48px;
   font-weight: 300;
@@ -430,18 +484,70 @@
   letter-spacing: -0.4364px;
   text-align: left;
   color: #535353;
+  position: absolute;
+  top: 90px;
+  left: 30px;
 }
 
-.detail {
-  font-size: 26px;
-  font-weight: 300;
-  line-height: 35px;
+.detail-1 {
+  font-family: Apercu Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  left: 30px;
+  top: 400px;
 }
+
+
+.detail-2 {
+  font-family: Apercu Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  left: 185px;
+  top: 400px;
+}
+
+.detail-3 {
+  font-family: Apercu Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  left: 30px;
+  top: 472px;
+}
+
 
 .detail-description {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  position: absolute;
+  top: 136px;
+  left: 30px;
+  width: 270px;
+}
+
+.detail-description-2 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  position: absolute;
+  top: 136px;
+  left: 30px;
+  width: 500px;
 }
 
 .custom-divider {
@@ -453,8 +559,30 @@
   position: absolute;
 }
 
+.living-stipped {
+  width: 135px;
+  height: 24px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.1455px;
+  text-align: left;
+  color: #685DC5;
+  position: absolute;
+  left: 30px;
+  top: 445px;
+}
+.custom-divider-1 {
+  width: 265.75px;
+  height: 1px;
+  top: 311px;
+  left: 29px;
+  border: 1px solid #DADADA;
+  position: absolute;
+}
+
 .tuition-covered {
-  margin-top: 30000px;
   font-family: "Apercu Pro";
   font-size: 16px;
   font-weight: 300;
@@ -462,6 +590,22 @@
   letter-spacing: -0.16px;
   text-align: left;
   color: #685DC5;
+  position: absolute;
+  left: 30px;
+  top: 373px;
+}
+
+.remain {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #685DC5;
+  position: absolute;
+  left: 185px;
+  top: 373px;
 }
 
 .study-commitment-section {
@@ -497,21 +641,40 @@
 .detail {
   width: 148px;
   height: 35px;
-  top: 32px;
   font-family: "Apercu Pro", sans-serif;
   font-size: 26px;
   font-weight: 300;
   line-height: 35px;
   letter-spacing: -0.1857px;
   text-align: left;
+  position: absolute;
+  top: 64px;
+  left: 30px;
+  color: #535353;
+}
+
+.detail-4 {
+  width: 200px;
+  height: 35px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: -0.1857px;
+  text-align: left;
+  position: absolute;
+  top: 64px;
+  left: 30px;
+  color: #535353;
 }
 
 .custom-divider-inside {
   width: 27.82px;
   height: 1px;
-  top: 89px;
+  top: 116px;
   border: 1px solid #DADADA;
-}
+  position: absolute;
+  left: 30px}
 
 .custom-graduation-section {
   width: 676px;
@@ -558,8 +721,10 @@
 .custom-divider-inside-2 {
   width: 27.82px;
   height: 1px;
-  top: 89px;
+  top: 106px;
   border: 1px solid #DADADA;
+  position: absolute;
+  left: 30px;
 }
 
 .bg-animation-container {
@@ -702,8 +867,6 @@ avatar {
   color: #535353;
 }
 
-/* styles.css */
-
 .title-question {
   width: 441px;
   height: 112px;
@@ -723,35 +886,6 @@ avatar {
   top: 2973px;
   left: 146px;
   position: absolute;
-}
-
-@media screen and (max-width: 1194px) {
-  .title-question-container {
-    width: 100%;
-    max-width: 441px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 2973px;
-    position: absolute;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .title-question-container {
-    transform: translateY(-50%);
-    top: 2973px;
-    position: absolute;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .title-question {
-    font-size: 36px;
-    line-height: 42px;
-    top: 2973px;
-    left: 146px;
-    position: absolute;
-  }
 }
 
 .filter-by {
@@ -979,6 +1113,25 @@ avatar {
 .interaction-space {
   background-color: #685DC5;
   padding: 10px;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  .interaction-space {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interaction-space {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .interaction-space {
+    width: 100%;
+  }
 }
 
 .apply-button {
@@ -1022,20 +1175,20 @@ avatar {
   width: 38px;
   height: 38px;
   left: 1350px;
-  top: 20px;
+  top: 16px;
   position: absolute;
 }
 
-//.sound {
-//  color: white;
-//  padding: 0;
-//  margin: 0;
-//  display: inline-block;
-//  width: 38px;
-//  height: 38px;
-//  left: 850px;
-//  top: 5px;
-//}
+.sound {
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  left: 1000px;
+  top: 5px;
+}
 
 .menu-icon {
   color: white;

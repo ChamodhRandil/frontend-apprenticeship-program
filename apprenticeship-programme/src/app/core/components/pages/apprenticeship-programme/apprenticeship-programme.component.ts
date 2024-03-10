@@ -30,7 +30,7 @@ export class ApprenticeshipProgrammeComponent implements OnInit{
   selectedValue!: string;
   courseModuleData: any;
   audio!: HTMLAudioElement;
-  soundOn: boolean = true;
+  soundOn: boolean = false;
 
 
   foods: any[] = [
@@ -46,7 +46,6 @@ export class ApprenticeshipProgrammeComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    console.log("hi");
     this.fetchAboutUsData();
   }
 
@@ -65,6 +64,21 @@ export class ApprenticeshipProgrammeComponent implements OnInit{
 
   toggleSound(): void {
     this.soundOn = !this.soundOn;
-    // Add logic to turn sound on/off
+    if (this.soundOn) {
+      this.playSound();
+    } else {
+      this.stopSound();
+    }
   }
+
+  playSound(){
+    this.audio.load();
+    this.audio.play();
+  }
+
+  stopSound() {
+    this.audio.pause();
+    this.audio.currentTime = 0;
+  }
+
 }

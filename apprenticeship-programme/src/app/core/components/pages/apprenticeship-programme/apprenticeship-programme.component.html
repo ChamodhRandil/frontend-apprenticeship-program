@@ -2,7 +2,7 @@
   <div class="sticky-header">
     <div class="row align-items-center header-content">
       <div class="interaction-space">
-        <span class="main-heading">Interaction Space <span class="sub-heading">/Interaction Design</span></span>
+        <span class="main-heading">HARBOUR.SPACE <span class="sub-heading">/Interaction Design</span></span>
 
         <button mat-icon-button (click)="toggleSound()" class="sound">
           <mat-icon>{{ soundOn ? 'volume_up' : 'volume_off' }}</mat-icon>
@@ -87,6 +87,10 @@
               <span class="date-text end-date">End Date:</span>
             </div>
           </div>
+          <div class="row">
+            <span class="startDate-text">30 June 2020</span>
+            <span class="endDate-Text">3 Aug 2020</span>
+          </div>
         </div>
       </div>
     </div>
@@ -108,8 +112,8 @@
 
     </div>
 
-    <div class="row custom-row">
-      <div class="col custom-container program-value-section">
+    <div>
+      <div class="custom-container program-value-section">
         <div class="custom-layout">
           <div class="custom-layout-2">
             <br><br>
@@ -118,39 +122,40 @@
             <span class="value-amount">€31,300</span>
           </div>
         </div>
-        <hr class="custom-divider">
+        <hr class="custom-divider-1">
         <div class="row">
-          <div class="col">
+          <div>
             <span class="tuition-covered">Tuition covered</span>
-            <span class="detail">$20000</span>
+            <span class="detail-1">€20,900</span>
           </div>
           <div class="col">
-            <span class="detail-label">Remaining</span>
-            <span class="detail">$20.000</span>
+            <span class="remain">Remaining</span>
+            <span class="detail-2">€2,000</span>
           </div>
         </div>
-        <span class="detail-label">Living stipend</span>
-        <span class="detail">$43485 to $2520</span>
+        <span class="living-stipped">Living stipend</span>
+        <span class="detail-3">€8,400 (€700/month)</span>
       </div>
 
-      <div class="col">
-        <div class="row custom-row">
-          <div class="col custom-container study-commitment-section">
+      <div>
+        <div >
+          <div class="study-commitment-section">
             <span class="detail-label">Study commitment</span>
             <br>
-            <span class="detail">8 hours/day</span>
+            <span class="detail">3 hours/day</span>
             <hr class="custom-divider-inside">
             <span class="detail-description">
-You will complete 15 modules to graduate. Daily classes are 3 hours, plus coursework to complete in your own time.         </span>
+              You will complete 15 modules to graduate. Daily classes are 3 hours, plus coursework to complete in your own time.
+            </span>
           </div>
-          <div class="col custom-container work-commitment-section">
+          <div class="work-commitment-section">
             <span class="detail-label">Work commitment</span>
             <br>
-            <span class="detail">8 hours/day</span>
+            <span class="detail">4 hours/day</span>
             <hr class="custom-divider-inside">
             <span class="detail-description">
-          Immerse yourself in the professional world during your apprenticeship. You’ll learn the ropes from the best and get to apply your newly acquired knowledge in the field from day one.
-        </span>
+              Immerse yourself in the professional world during your apprenticeship. You’ll learn the ropes from the best and get to apply your newly acquired knowledge in the field from day one.
+            </span>
           </div>
         </div>
         <div class="custom-graduation-section">
@@ -161,9 +166,9 @@ You will complete 15 modules to graduate. Daily classes are 3 hours, plus course
 
         <div class="full-time-contract-section">
           <span class="detail-label">A full-time contract</span>
-          <span class="detail">1 Year / Full-Time</span>
+          <span class="detail-4">1 Year / Full-Time</span>
           <hr class="custom-divider-inside-2">
-          <span class="detail-description">You’ll be guaranteed a 1 year contract with SCG upon graduation.</span>
+          <span class="detail-description-2">You’ll be guaranteed a 1 year contract with SCG upon graduation.</span>
         </div>
       </div>
     </div>
@@ -172,31 +177,6 @@ You will complete 15 modules to graduate. Daily classes are 3 hours, plus course
       <img src="./assets/images/background-animation.jpeg" width="1120px" height="394.07px"/>
     </div>
 
-    <!--    <div class="main-container">-->
-    <!--      <div class="row-container d-inline-flex">-->
-    <!--        <div class="card border rounded" *ngFor="let index of [].constructor(5)">-->
-    <!--          <div class="row align-items-center card-content">-->
-    <!--            <div class="col">-->
-    <!--              <img src="./assets/images/girl.jpeg" width="80px" height="78.62px" class="avatar">-->
-    <!--              <span class="name">Irene Pereyra</span>-->
-    <!--              <br>-->
-    <!--              <span class="role">Interaction Design Fellow ‘19</span>-->
-    <!--            </div>-->
-    <!--            <div class="col-auto">-->
-    <!--              <mat-icon class="add-icon">add</mat-icon>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--          <div class="additional-content">-->
-    <!--            <div class="additional-content-content">-->
-    <!--            <span class="additional-content-description">-->
-    <!--              This Fellowship was a turning point in my career. I wouldn’t be where I am today without the financial support and experienced offered through the program.-->
-    <!--            </span><br><br>-->
-    <!--              <span class="education">Education · B.A. Visual Design</span>-->
-    <!--            </div>-->
-    <!--          </div>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
     <div class="main-container">
       <div class="row-container d-inline-flex" id="cardContainer">
         <div class="card border rounded" *ngFor="let index of [].constructor(5)">
@@ -208,14 +188,14 @@ You will complete 15 modules to graduate. Daily classes are 3 hours, plus course
               <span class="role">Interaction Design Fellow ‘19</span>
             </div>
             <div class="col-auto">
-              <mat-icon class="add-icon">add</mat-icon>
+              <mat-icon>LinkedIn</mat-icon>
             </div>
           </div>
           <div class="additional-content">
             <div class="additional-content-content">
-          <span class="additional-content-description">
-            This Fellowship was a turning point in my career. I wouldn’t be where I am today without the financial support and experienced offered through the program.
-          </span><br><br>
+              <span class="additional-content-description">
+                This Fellowship was a turning point in my career. I wouldn’t be where I am today without the financial support and experienced offered through the program.
+              </span><br><br>
               <span class="education">Education · B.A. Visual Design</span>
             </div>
           </div>
@@ -226,7 +206,7 @@ You will complete 15 modules to graduate. Daily classes are 3 hours, plus course
 
     <div class="test">
       <div class="title-question-container">
-        <div class="col">
+        <div>
           <span class="title-question">Frequently asked questions</span>
           <span class="filter-by">Filter by:</span>
           <mat-form-field appearance="outline" class="custom-mat-field">
@@ -282,14 +262,5 @@ You will complete 15 modules to graduate. Daily classes are 3 hours, plus course
       </div>
     </div>
   </div>
-
-<!--  <div class="bottom-layer">-->
-<!--    <div class="buttons">-->
-<!--      <button mat-icon-button (click)="toggleSound()">-->
-<!--        <mat-icon>{{ soundOn ? 'volume_up' : 'volume_off' }}</mat-icon>-->
-<!--      </button>-->
-<!--    </div>-->
-<!--  </div>-->
-
 
 </div>
