@@ -1,1 +1,1 @@
-export const API_URL = 'https://pre-prod.harbour.space/api/v1/scholarship_pages/data-science-apprenticeship-zeptolab';
+export const API_URL = 'https://mocki.io/v1/afea1b77-f2e8-4bbe-a34f-e938a070cae3';

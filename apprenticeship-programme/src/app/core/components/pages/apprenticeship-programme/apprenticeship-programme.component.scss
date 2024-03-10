@@ -1,0 +1,723 @@
+/* Global styles */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.d-block {
+  display: block;
+}
+
+.rounded-pill {
+  border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .col {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+  .col {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .col {
+    width: 50%;
+  }
+}
+
+.title {
+  width: 440px;
+  height: 96px;
+  position: absolute;
+  top: 261px;
+  left: 200px;
+  font-family: "Apercu Pro";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #685DC5;
+  background: none;
+}
+
+.work-study-program {
+  width: 440px;
+  height: 64px;
+  position: absolute;
+  top: 405px;
+  left: 201px;
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: #535353;
+}
+
+.partnered-text {
+  width: 440px;
+  height: 160px;
+  position: absolute;
+  top: 509px;
+  left: 200px;
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: #535353;
+}
+
+.position-text {
+  display: block;
+  width: 438px;
+  height: 33px;
+  position: absolute;
+  top: 709px;
+  left: 202px;
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: #535353;
+}
+
+.position-text span {
+  font-family: "Apercu Pro";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: #535353;
+}
+
+#apply-now-btn {
+  width: 166px;
+  height: 58px;
+  background: #685DC5;
+  border: none;
+  color: #fff;
+  font-family: "Apercu Pro";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  top: 790px;
+  left: 200px;
+}
+
+
+#apply-now-btn span {
+  position: absolute;
+  width: 85px;
+  height: 24px;
+  top: 16px;
+  left: 40.96px;
+  font-family: "Apercu Pro";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+  text-align: center;
+}
+
+.col-auto img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 261px;
+  left: 800px;
+}
+
+.powered-by {
+  width: 120px;
+  height: 24px;
+  position: absolute;
+  top: 269px;
+  left: 920px;
+  opacity: 0.5;
+  font-family: "Apercu Pro";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+  text-align: left;
+  color: black;
+}
+
+.zeptolab {
+  width: 239px;
+  height: 24px;
+  position: absolute;
+  top: 303px;
+  left: 921px;
+  font-family: "Apercu Pro";
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.27px;
+  text-align: left;
+  color: #535353;
+}
+
+.application-section {
+  width: 480px;
+  height: 116px;
+  position: absolute;
+  top: 368px;
+  left: 800px;
+  border: 1px solid #DADADA;
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.application-closes-in {
+  width: 161.41px;
+  height: 24px;
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #685DC5;
+}
+
+.countdown {
+  width: 415.21px;
+  height: 24px;
+  font-family: "Apercu Pro";
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.27000001072883606px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+  top: 42px;
+}
+
+.rectangle-section {
+  width: 480px;
+  height: 200px;
+  position: absolute;
+  top: 514px;
+  left: 800px;
+  border: 1px solid #DADADA;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 0;
+}
+
+.location-text {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #685DC5;
+
+}
+
+.bangkok-text {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+}
+
+.duration-label {
+  width: 106px;
+  height: 73px;
+  position: absolute;
+  left: 240px;
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #685DC5;
+
+}
+
+.duration-value {
+  width: 106px;
+  height: 73px;
+  position: absolute;
+  left: 230px;
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #535353;
+}
+
+.date-text {
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+}
+
+.date-text .start-date {
+  font-weight: 300;
+  width: 144px;
+  height: 49px;
+  top: 72px;
+  display: inline-block;
+}
+
+.date-text .end-date {
+  font-weight: 500;
+  width: 144px;
+  height: 49px;
+  top: 72px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .application-section, .rectangle-section {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 834px) and (max-width: 1194px) {
+  .application-section, .rectangle-section {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .application-section, .rectangle-section {
+    width: 480px;
+  }
+}
+
+.bg-image-container {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  position: absolute;
+  top: 613px;
+  left: 880px;
+  border: 1px solid #E6E6E6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.person-image-container {
+  position: absolute;
+  width: 438px;
+  height: 438px;
+  top: 1030px;
+  left: 203px;
+  border: 1px solid #EEEEEE;
+}
+
+.person-container {
+  position: absolute;
+  top: 1059px;
+  left: 231px;
+}
+
+.about-apprenticeship-heading {
+  position: absolute;
+  width: 479px;
+  height: 112px;
+  top: 1106px;
+  left: 760px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  color: #685DC5;
+}
+
+.marketing-programs {
+  position: absolute;
+  width: 479px;
+  height: 160px;
+  top: 1258px;
+  left: 760px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.33px;
+  text-align: left;
+  color: #535353;
+}
+
+.custom-container {
+  width: 320px;
+  height: 524px;
+  top: 1540px;
+  left: 201px;
+  border: 1px solid #DADADA;
+}
+
+.program-value-section {
+  position: absolute;
+}
+
+.value-label {
+  width: 122px;
+  height: 24px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.1455px;
+  text-align: left;
+  color: #685DC5;
+}
+
+.detail-label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.value-amount {
+  width: 160px;
+  height: 34px;
+  top: 57px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.4364px;
+  text-align: left;
+  color: #535353;
+}
+.detail {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.detail-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.custom-divider {
+  width: 265.75px;
+  height: 1px;
+  top: 1851px;
+  left: 228px;
+  border: 1px solid #DADADA;
+  position: absolute;
+}
+
+.tuition-covered {
+  margin-top: 30000px;
+  font-family: "Apercu Pro";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  text-align: left;
+  color: #685DC5;
+}
+
+.study-commitment-section {
+  width: 320px;
+  height: 274px;
+  position: absolute;
+  top: 1540px;
+  left: 561px;
+  border: 1px solid #DADADA;
+}
+
+.work-commitment-section {
+  width: 320px;
+  height: 274px;
+  position: absolute;
+  top: 1540px;
+  left: 921px;
+  border: 1px solid #DADADA;
+}
+
+.detail-label {
+  width: 135px;
+  height: 24px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.1455px;
+  text-align: left;
+  color: #685DC5;
+}
+
+.detail {
+  width: 148px;
+  height: 35px;
+  top: 32px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: -0.1857px;
+  text-align: left;
+}
+
+.custom-divider-inside {
+  width: 27.82px;
+  height: 1px;
+  top: 89px;
+  border: 1px solid #DADADA;
+}
+
+.custom-graduation-section {
+  width: 676px;
+  height: 24px;
+  top: 1838px;
+  left: 563.13px;
+  padding: 0px 0.25px 0px 0px;
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.custom-divider-graduation {
+  width: 265.75px;
+  height: 1px;
+  border: 1px solid #DADADA;
+}
+
+.graduation-text {
+  width: 95px;
+  height: 24px;
+  left: 290.88px;
+  font-family: "Apercu Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.1455px;
+  text-align: center;
+  color: #535353;
+}
+
+.full-time-contract-section {
+  width: 680px;
+  height: 178px;
+  position: absolute;
+  top: 1886px;
+  left: 561px;
+  border: 1px solid #DADADA;
+  background: #FFFFFF;
+}
+
+.custom-divider-inside-2 {
+  width: 27.82px;
+  height: 1px;
+  top: 89px;
+  border: 1px solid #DADADA;
+}
+
+.bg-animation-container {
+  width: 1120px;
+  height: 394.07px;
+  position: absolute;
+  top: 2234px;
+  left: 112px;
+  border: 1px solid #E6E6E6;
+}
+
+.main-container {
+  height: 459.92px;
+  top: 2343.08px;
+  border-radius: 0px 0px 4px 4px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  position: absolute;
+}
+
+.row-container {
+  margin-top: 50px;
+}
+
+.card {
+  width: 800px;
+  margin-right: 20px;
+}
+
+.card-content {
+  padding: 20px;
+  gap: 16px;
+  background-color: white;
+}
+
+.card-content img {
+  width: 80px;
+  height: 80px;
+}
+
+.card-content .name {
+  font-family: Apercu Pro;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.card-content .role {
+  font-family: Apercu Pro;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.card-content .add-icon {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.additional-content {
+  width: 798px;
+  height: 310.54px;
+  top: 2491.47px;
+  left: 273px;
+  border-radius: 0px 0px 4px 4px;
+  background-color: #FBFBFB;
+}
+
+
+.additional-content-content {
+  width: 561px;
+  height: 191.63px;
+  top: 2547.49px;
+}
+
+
+
+.additional-content-description {
+  width: 561px;
+  height: 137.58px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 35px;
+  letter-spacing: -0.18571428954601288px;
+  text-align: left;
+  color: #6A6A6A;
+}
+
+avatar {
+  top: 2382.39px;
+  left: 313px;
+}
+
+.name {
+  width: 95px;
+  height: 24px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.145454540848732px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+
+}
+
+.role {
+  width: 189px;
+  height: 24px;
+  top: 22px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+  position: absolute;
+}
+
+.education {
+  width: 212px;
+  height: 24px;
+  top: 169px;
+  font-family: 'Apercu Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.1599999964237213px;
+  text-align: left;
+  color: #535353;
+}
+
+
+//@media only screen and (min-width: 768px) and (max-width: 1024px) {
+//  .custom-graduation-section,
+//  .full-time-contract-section,
+//  .work-commitment-section,
+//  .study-commitment-section,
+//  .program-value-section{
+//    width: 50%;
+//  }
+//}
+//
+//@media only screen and (min-width: 834px) and (max-width: 1194px) {
+//  .custom-graduation-section,
+//  .full-time-contract-section,
+//  .work-commitment-section,
+//  .study-commitment-section,
+//  .program-value-section{
+//    width: 60%;
+//  }
+//}
+
+
+
+
+
+
+
+
+

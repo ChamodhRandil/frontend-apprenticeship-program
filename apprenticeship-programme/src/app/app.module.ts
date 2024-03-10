@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { ApprenticeshipProgrammeCourseModuleComponent } from "./core/components/pages/apprenticeship-programme-course-module/apprenticeship-programme-course-module.component";
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
+import {
+  ApprenticeshipProgrammeComponent
+} from "./core/components/pages/apprenticeship-programme/apprenticeship-programme.component";
 
 @NgModule({
   declarations: [
@@ -14,7 +17,8 @@ import {CommonModule} from "@angular/common";
   imports: [
     BrowserModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    ApprenticeshipProgrammeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
