@@ -74,11 +74,13 @@ export class ApprenticeshipProgrammeComponent implements OnInit {
   playSound() {
     this.audio.load();
     this.audio.play();
+    alert("Sound on");
   }
 
   stopSound() {
     this.audio.pause();
     this.audio.currentTime = 0;
+    alert("Sound Off");
   }
 
 }
