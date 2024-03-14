@@ -1,7 +1,7 @@
-<h1>------------------Testing------------------</h1>
+<h1>------------------API Data------------------</h1>
 <div *ngIf="courseModuleData">
   <h2>{{ courseModuleData.scholarship.name }}</h2>
-  <p>{{ courseModuleData.scholarship.description[0].data }}</p>
+  <p>{{ courseModuleData.scholarship.description?.[0].data }}</p>
   <h3>Location: {{ courseModuleData.scholarship.location.name }}</h3>
   <p>Tuition: ${{ courseModuleData.scholarship.tuition }}</p>
   <p>Total Value: ${{ courseModuleData.scholarship.total_value }}</p>
@@ -23,5 +23,3 @@
     </li>
   </ul>
 </div>
-
-

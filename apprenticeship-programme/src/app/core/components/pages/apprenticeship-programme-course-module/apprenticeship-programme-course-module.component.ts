@@ -10,7 +10,9 @@ export class ApprenticeshipProgrammeCourseModuleComponent implements OnInit {
 
   courseModuleData: any;
   audio!: HTMLAudioElement;
-
+  soundOn: boolean = true;
+  inputValue: string = "";
+  inputArray: Array<string> = new Array<string>();
 /*
 Use for Testing Purposes
 */
@@ -35,8 +37,6 @@ Use for Testing Purposes
   }
 
   playSound() {
-    // let audio =  new Audio();
-    // audio.src = "../assets/music/better-day-186374.mp3";
     this.audio.load();
     this.audio.play();
   }
@@ -44,5 +44,10 @@ Use for Testing Purposes
   stopSound() {
     this.audio.pause();
     this.audio.currentTime = 0;
+  }
+
+  addData(){
+    this.inputArray.push(this.inputValue);
+    this.inputValue = "";
   }
 }

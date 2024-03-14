@@ -12,7 +12,7 @@
           <mat-icon class="menu-icon">menu</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>
+          <button mat-menu-item (click)="navigateCoursePage()">
             <mat-icon>dialpad</mat-icon>
             <span>Redial</span>
           </button>
