@@ -14,12 +14,13 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatToolbar} from "@angular/material/toolbar";
 import {FormsModule} from "@angular/forms";
 import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
-import {MatFormField} from "@angular/material/form-field";
+import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatOption, MatSelect} from "@angular/material/select";
 import {MatDivider} from "@angular/material/divider";
-import {MatIconButton} from "@angular/material/button";
+import {MatButton, MatIconButton} from "@angular/material/button";
 import {AppRoutingModule} from "./app-routing.module";
 import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatProgressSpinner} from "@angular/material/progress-spinner";
 
 @NgModule({
   declarations: [
@@ -46,7 +47,10 @@ import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
     MatIconButton,
     MatMenuItem,
     AppRoutingModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatLabel,
+    MatButton,
+    MatProgressSpinner
   ],
   providers: [],
   bootstrap: [AppComponent]

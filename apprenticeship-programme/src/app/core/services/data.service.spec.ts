@@ -11,7 +11,7 @@ describe('ApiService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule, HttpClientModule], // Include HttpClientModule here
+      imports: [HttpClientTestingModule, HttpClientModule],
       providers: [ApiService, ExceptionService]
     });
     apiService = TestBed.inject(ApiService);
