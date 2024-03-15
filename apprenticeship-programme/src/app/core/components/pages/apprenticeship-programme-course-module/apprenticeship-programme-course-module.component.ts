@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../../services/data.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-apprenticeship-programme-course-module',
@@ -10,19 +11,25 @@ export class ApprenticeshipProgrammeCourseModuleComponent implements OnInit {
 
   courseModuleData: any;
   audio!: HTMLAudioElement;
-
+  isLoading : boolean = false;
+  inputValue: string = "";
+  inputArray: Array<string> = new Array<string>();
 /*
 Use for Testing Purposes
 */
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService,
+              private router: Router) {
     this.audio = new Audio();
     this.audio.src = "../assets/music/better-day-186374.mp3";
 
   }
 
   ngOnInit(): void {
-    console.log("hi");
-    this.fetchAboutUsData();
+    this.isLoading = true;
+    setTimeout(() => {
+      this.fetchAboutUsData();
+      this.isLoading = false;
+    }, 3000);
   }
 
   fetchAboutUsData(): void {
@@ -34,15 +41,12 @@ Use for Testing Purposes
     });
   }
 
-  playSound() {
-    // let audio =  new Audio();
-    // audio.src = "../assets/music/better-day-186374.mp3";
-    this.audio.load();
-    this.audio.play();
+  Back() {
+    this.router.navigateByUrl('/');
   }
 
-  stopSound() {
-    this.audio.pause();
-    this.audio.currentTime = 0;
+  addData(){
+    this.inputArray.push(this.inputValue);
+    this.inputValue = "";
   }
 }

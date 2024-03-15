@@ -1,37 +1,76 @@
 <div>
+<!--  <div class="sticky-header">-->
+<!--    <div class="row align-items-center header-content">-->
+<!--      <div class="interaction-space">-->
+<!--        <span class="main-heading">HARBOUR.SPACE <span class="sub-heading">/Interaction Design</span></span>-->
+
+<!--        <button mat-icon-button (click)="toggleSound()" class="sound">-->
+<!--          <mat-icon>{{ soundOn ? 'volume_up' : 'volume_off' }}</mat-icon>-->
+<!--        </button>-->
+
+<!--        <button class="menu-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Icon button">-->
+<!--          <mat-icon class="menu-icon">menu</mat-icon>-->
+<!--        </button>-->
+<!--        <mat-menu #menu="matMenu">-->
+<!--          <button mat-menu-item (click)="navigateCoursePage()">-->
+<!--            <mat-icon>dialpad</mat-icon>-->
+<!--            <span>Redial</span>-->
+<!--          </button>-->
+<!--          <button mat-menu-item disabled>-->
+<!--            <mat-icon>voicemail</mat-icon>-->
+<!--            <span>Check voice mail</span>-->
+<!--          </button>-->
+<!--          <button mat-menu-item>-->
+<!--            <mat-icon>notifications_off</mat-icon>-->
+<!--            <span>Disable alerts</span>-->
+<!--          </button>-->
+<!--        </mat-menu>-->
+<!--      </div>-->
+
+<!--      <div class="apply">-->
+<!--        <button class="apply-button">-->
+<!--          <span class="apply-text">Apply</span><br>-->
+<!--          <span class="now-text">Now</span>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
   <div class="sticky-header">
-    <div class="row align-items-center header-content">
-      <div class="interaction-space">
-        <span class="main-heading">HARBOUR.SPACE <span class="sub-heading">/Interaction Design</span></span>
+    <div class="container">
+      <div class="row align-items-center header-content">
+        <div class="col-md-8 interaction-space">
+          <span class="main-heading">HARBOUR.SPACE <span class="sub-heading">/Interaction Design</span></span>
 
-        <button mat-icon-button (click)="toggleSound()" class="sound">
-          <mat-icon>{{ soundOn ? 'volume_up' : 'volume_off' }}</mat-icon>
-        </button>
+          <button mat-icon-button (click)="toggleSound()" class="sound">
+            <mat-icon>{{ soundOn ? 'volume_up' : 'volume_off' }}</mat-icon>
+          </button>
 
-        <button class="menu-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Icon button">
-          <mat-icon class="menu-icon">menu</mat-icon>
-        </button>
-        <mat-menu #menu="matMenu">
-          <button mat-menu-item>
-            <mat-icon>dialpad</mat-icon>
-            <span>Redial</span>
+          <button class="menu-button" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Icon button">
+            <mat-icon class="menu-icon">menu</mat-icon>
           </button>
-          <button mat-menu-item disabled>
-            <mat-icon>voicemail</mat-icon>
-            <span>Check voice mail</span>
-          </button>
-          <button mat-menu-item>
-            <mat-icon>notifications_off</mat-icon>
-            <span>Disable alerts</span>
-          </button>
-        </mat-menu>
-      </div>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="navigateCoursePage()">
+              <mat-icon>dialpad</mat-icon>
+              <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon>
+              <span>Check voice mail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>Disable alerts</span>
+            </button>
+          </mat-menu>
+        </div>
 
-      <div class="apply">
-        <button class="apply-button">
-          <span class="apply-text">Apply</span><br>
-          <span class="now-text">Now</span>
-        </button>
+        <div class="col-md-4 apply">
+          <button class="apply-button">
+            <span class="apply-text">Apply</span><br>
+            <span class="now-text">Now</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

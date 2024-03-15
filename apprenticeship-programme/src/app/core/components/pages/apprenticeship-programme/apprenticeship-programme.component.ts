@@ -1,27 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {MatIcon, MatIconModule} from "@angular/material/icon";
-import {MatDivider} from "@angular/material/divider";
-import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
-import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
-import {MatFormField} from "@angular/material/form-field";
-import {MatOption, MatSelect} from "@angular/material/select";
-import {FormsModule} from "@angular/forms";
-import {
-  MatAccordion,
-  MatExpansionPanel,
-  MatExpansionPanelDescription,
-  MatExpansionPanelTitle
-} from "@angular/material/expansion";
-import {MatIconButton} from "@angular/material/button";
-import {MatSlider} from "@angular/material/slider";
-import {MatToolbar} from "@angular/material/toolbar";
 import {DataService} from "../../../services/data.service";
+import {ToastMessageService} from "../../../../shared/components/services/toast-message.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-apprenticeship-programme',
-  standalone: true,
-  imports: [MatIcon, MatDivider, NgOptimizedImage, NgIf, NgForOf, MatMenuTrigger, MatMenu, MatFormField, MatSelect, MatOption, FormsModule, MatAccordion, MatExpansionPanel, MatExpansionPanelTitle, MatExpansionPanelDescription, MatIconButton, MatIconModule, MatSlider, MatToolbar, MatMenuItem
-  ],
   templateUrl: './apprenticeship-programme.component.html',
   styleUrl: './apprenticeship-programme.component.scss'
 })
@@ -39,7 +22,10 @@ export class ApprenticeshipProgrammeComponent implements OnInit {
     {value: 'tacos-2', viewValue: 'Tacos'},
   ];
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService,
+              private router: Router,
+              private toastMsgService: ToastMessageService
+  ) {
     this.audio = new Audio();
     this.audio.src = "../assets/music/better-day-186374.mp3";
 
@@ -74,11 +60,16 @@ export class ApprenticeshipProgrammeComponent implements OnInit {
   playSound() {
     this.audio.load();
     this.audio.play();
+    this.toastMsgService.showSuccessToast('Sound On!')
   }
 
   stopSound() {
     this.audio.pause();
     this.audio.currentTime = 0;
+    this.toastMsgService.showErrorToast('Sound Off!')
   }
 
+  navigateCoursePage(){
+    this.router.navigateByUrl('/course-data');
+  }
 }
